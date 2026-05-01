@@ -1,2 +1,2 @@
 # my_model_test
-motor designe.
+motor design.
