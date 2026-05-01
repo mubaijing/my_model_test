@@ -1,0 +1,27 @@
+schema_path: configs/data_schema.yaml
+
+paths:
+  model_dir: outputs/models
+  log_dir: outputs/logs
+  figure_dir: outputs/figures
+
+data:
+  file_path: data/examples/sample_motor_data.csv
+  sheet_name: Sheet1
+  test_size: 0.15
+  val_size: 0.15
+  random_state: 42
+
+model:
+  name: mlp
+  hidden_layers: [64, 64, 32]
+  activation: relu
+  dropout: 0.0
+
+training:
+  epochs: 300
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  early_stopping_patience: 40
+  device: auto

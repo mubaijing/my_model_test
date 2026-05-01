@@ -1,0 +1,23 @@
+input_columns:
+  - air_gap_mm
+  - magnet_thickness_mm
+  - slot_opening_mm
+
+target_columns:
+  - torque_Nm
+
+design_variables:
+  air_gap_mm:
+    lower: 0.5
+    upper: 1.5
+    unit: mm
+
+  magnet_thickness_mm:
+    lower: 2.0
+    upper: 8.0
+    unit: mm
+
+  slot_opening_mm:
+    lower: 1.0
+    upper: 4.0
+    unit: mm
